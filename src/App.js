@@ -40,7 +40,7 @@ function App() {
         ) : (
           users.map((user) => (
             <div className="data" key={user.id}>
-              <img src={user.avatar} loading="lazy" />
+              <img src={user.avatar} loading="lazy" alt="api images" />
               <div>
                 <h4>{`${user.first_name} ${user.last_name}`}</h4>
                 <p>{user.employment.title}</p>
