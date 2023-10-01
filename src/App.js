@@ -4,7 +4,6 @@ import "./App.css";
 function App() {
   const [users, setUsers] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
-  const [error, setError] = React.useState(null);
 
   const fetchData = async () => {
     setLoading(true);
@@ -19,7 +18,6 @@ function App() {
     } catch (error) {
       setLoading(false);
       console.log({ error });
-      setError(error.message);
     }
   };
 
